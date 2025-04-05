@@ -218,7 +218,7 @@ def pdf_to_csv(pdf_path, output_csv):
     save_to_csv(structured_data, output_csv)
 
 # Set up Google API key
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCzmiAACOK6QX8djGhiE6S8Me6jjpgeJfA"
+os.environ["GOOGLE_API_KEY"] = 
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 def analyze_bloodwork(file_path, user_info=None):
