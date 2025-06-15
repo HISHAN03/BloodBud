@@ -218,14 +218,14 @@ def pdf_to_csv(pdf_path, output_csv):
     save_to_csv(structured_data, output_csv)
 
 # Set up Google API key
-os.environ["GOOGLE_API_KEY"] = 
+os.environ["GOOGLE_API_KEY"] ="AIzaSyAxfVaweEcTVsIXiqlP7Vq356bb8h2ogqE"
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 def analyze_bloodwork(file_path, user_info=None):
     try:
         # Read the CSV file
         df = pd.read_csv(file_path)
-        
+
         # Print the dataframe for debugging
         debug_print("===== DATAFRAME START =====")
         debug_print(df.head())
@@ -268,7 +268,7 @@ def analyze_bloodwork(file_path, user_info=None):
 
         prompt = f"""
         You are an AI-powered medical assistant analyzing blood test results.
-
+        
         Instructions:
         Provide clear and actionable health recommendations based on the test results.
         Present the blood test results in a structured breakdown with:

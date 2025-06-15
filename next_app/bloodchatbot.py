@@ -5,7 +5,8 @@ import json
 import re
 
 # Set API key - ensure it's properly set
-api_key = 
+api_key = "AIzaSyAxfVaweEcTVsIXiqlP7Vq356bb8h2ogqE"
+
 os.environ["GOOGLE_API_KEY"] = api_key
 
 # Configure the API with the key
